@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Western Settlement Builder for Steam — Schill Labs</title>
+  <title>Games — Schill Labs</title>
   <meta name="description" content="The first Schill Labs game: a town-building sim set on the American frontier, in development for Steam. Name and Steam page coming.">
   <link rel="canonical" href="https://schilllabs.com/games/">
   <meta name="theme-color" content="#05060A">
@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://schilllabs.com/assets/img/og/og-games.png">
 
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
@@ -34,7 +34,7 @@
   {
     "@context": "https://schema.org",
     "@type": "VideoGame",
-    "name": "Untitled western settlement builder",
+    "name": "Untitled western sim",
     "genre": ["Simulation", "City Builder", "Strategy"],
     "gamePlatform": "PC",
     "description": "A town-building sim set on the American frontier, in development for Steam.",
@@ -54,6 +54,7 @@
         <img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">
         <span>SCHILL&nbsp;<b>LABS</b></span>
       </a>
+      <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="/games/" aria-current="page">Games</a></li>
         <li><a href="/apps/">Apps</a></li>
@@ -63,13 +64,14 @@
         <li><a href="/support/">Support</a></li>
         <li class="nav-cta"><a class="btn btn-primary btn-sm" href="/#newsletter">Get updates</a></li>
       </ul>
+      </nav>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
-    <a href="/games/">Games</a>
+    <a href="/games/" aria-current="page">Games</a>
     <a href="/apps/">Apps</a>
     <a href="/news/">News</a>
     <a href="/about/">About</a>
@@ -78,12 +80,12 @@
     <a class="btn btn-primary" href="/#newsletter">Get updates</a>
   </nav>
 
-  <main id="main">
-    <section class="game-hero">
+  <main id="main" tabindex="-1">
+    <section class="game-hero" aria-labelledby="game-title">
       <div class="art"><img src="/assets/img/art/frontier-wide.svg" alt="A frontier settlement at dusk beneath desert mesas."></div>
       <div class="container game-hero-content">
-        <span class="eyebrow acc" style="--acc:#FF9E4A">In development for Steam · Working title</span>
-        <h1 class="rv">A western<br>settlement builder<span class="ember-text">.</span></h1>
+        <span class="eyebrow acc" style="--acc:#FF9E4A">In development for Steam · Untitled project</span>
+        <h1 class="rv" id="game-title">A western<br>settlement builder<span class="ember-text">.</span></h1>
         <div class="chip-row rv rv-d1" style="margin-top:1.3rem">
           <span class="chip hot">Settlement sim</span>
           <span class="chip hot">American frontier</span>
@@ -94,13 +96,14 @@
           <a class="btn btn-ember" href="#reveal">Get launch emails <span class="arr">→</span></a>
           <a class="btn btn-ghost" href="#about-game">More about it</a>
         </div>
+        <p class="form-note">Mood piece, not gameplay.</p>
       </div>
     </section>
 
-    <section class="sec" id="about-game">
+    <section class="sec" id="about-game" aria-labelledby="idea-title">
       <div class="container">
         <span class="eyebrow acc rv" style="--acc:#FF9E4A">The game</span>
-        <h2 class="rv">The idea.</h2>
+        <h2 class="rv" id="idea-title">The idea.</h2>
         <div class="pillars">
           <div class="card pillar rv"><span class="num">01 — SETTLE</span><h3>Pick your ground</h3><p>Choose where the town goes and lay it out yourself, building by building, road by road.</p></div>
           <div class="card pillar rv rv-d1"><span class="num">02 — RUN IT</span><h3>Keep it working</h3><p>Shops need stock, workers need wages, and the books have to balance at the end of the month.</p></div>
@@ -109,10 +112,10 @@
       </div>
     </section>
 
-    <section class="sec-tight">
+    <section class="sec-tight" aria-labelledby="details-title">
       <div class="container">
         <span class="eyebrow rv">Details</span>
-        <h2 class="rv">The short version.</h2>
+        <h2 class="rv" id="details-title">The short version.</h2>
         <div class="teaser-list rv">
           <div class="teaser-item"><span class="k">Genre</span><span class="v">Settlement builder / management sim</span></div>
           <div class="teaser-item"><span class="k">Setting</span><span class="v">The American frontier, late 1800s</span></div>
@@ -124,11 +127,11 @@
       </div>
     </section>
 
-    <section class="sec-tight" id="reveal">
+    <section class="sec-tight" id="reveal" aria-labelledby="reveal-title">
       <div class="container">
         <div class="news-card rv" style="background:linear-gradient(140deg,#140D18,#1E1210 55%,#241108);border-color:rgba(255,158,74,.3)">
           <span class="eyebrow acc" style="--acc:#FF9E4A;justify-content:center">Newsletter</span>
-          <h2>The name and the Steam page land soon.</h2>
+          <h2 id="reveal-title">The name and the Steam page land soon.</h2>
           <p>Subscribers get the announcement first, then everyone else. One email per real milestone.</p>
           <form class="subscribe" data-topic="Western sim updates" novalidate>
             <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
@@ -140,10 +143,10 @@
       </div>
     </section>
 
-    <section class="sec-tight">
+    <section class="sec-tight" aria-labelledby="faq-title">
       <div class="container">
         <span class="eyebrow rv">Questions</span>
-        <h2 class="rv">Common questions.</h2>
+        <h2 class="rv" id="faq-title">Common questions.</h2>
         <div class="faq rv">
           <details open>
             <summary>When is it coming out?</summary>
@@ -190,7 +193,7 @@
             <li><a href="/apps/dryfire-trainer/">Dryfire Trainer</a></li>
             <li><a href="/apps/swing-loop/">Swing Loop</a></li>
             <li><a href="/apps/bloom-doc/">Bloom Doc</a></li>
-            <li><a href="/games/">The western sim</a></li>
+            <li><a href="/games/">Untitled western sim</a></li>
           </ul>
         </div>
         <div>

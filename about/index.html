@@ -23,7 +23,7 @@
   <meta name="twitter:image" content="https://schilllabs.com/assets/img/og/og-about.png">
 
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
@@ -41,6 +41,7 @@
         <img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">
         <span>SCHILL&nbsp;<b>LABS</b></span>
       </a>
+      <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="/games/">Games</a></li>
         <li><a href="/apps/">Apps</a></li>
@@ -50,6 +51,7 @@
         <li><a href="/support/">Support</a></li>
         <li class="nav-cta"><a class="btn btn-primary btn-sm" href="/#newsletter">Get updates</a></li>
       </ul>
+      </nav>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -59,28 +61,29 @@
     <a href="/games/">Games</a>
     <a href="/apps/">Apps</a>
     <a href="/news/">News</a>
-    <a href="/about/">About</a>
+    <a href="/about/" aria-current="page">About</a>
     <a href="/press/">Press</a>
     <a href="/support/">Support</a>
     <a class="btn btn-primary" href="/#newsletter">Get updates</a>
   </nav>
 
-  <main id="main">
-    <section class="page-hero">
+  <main id="main" tabindex="-1">
+    <section class="page-hero" aria-labelledby="about-title">
       <div class="page-glow" aria-hidden="true"></div>
       <div class="container">
         <span class="eyebrow rv">The studio</span>
-        <h1 class="rv">About <span class="grad-text">Schill Labs</span>.</h1>
+        <h1 class="rv" id="about-title">About <span class="grad-text">Schill Labs</span>.</h1>
         <p class="lead rv rv-d1">Schill Labs is me, Michael Schillereff. I build phone apps, and I'm building a PC game. This page is the honest version of what that means.</p>
       </div>
     </section>
 
-    <section class="sec-tight">
+    <section class="sec-tight" aria-labelledby="story-title">
       <div class="container"><div class="prose rv">
-        <h2>What this is</h2>
+        <h2 id="story-title">What this is</h2>
         <p>Schill Labs is a one-person software studio. There's no office and no team photo to show you. There's a backlog, a lot of coffee, and a rule that nothing ships until I'd be happy paying for it myself.</p>
         <p>The app side currently has four projects: <a href="/apps/mello/">Mello</a>, a calm game for the end of the day; <a href="/apps/dryfire-trainer/">Dryfire Trainer</a>, structured dry-fire practice; <a href="/apps/swing-loop/">Swing Loop</a>, golf practice built on repetition; and <a href="/apps/bloom-doc/">Bloom Doc</a>, for keeping plants alive. Each one exists because I wanted it and couldn't find a version I liked.</p>
         <p>The game side has one project: <a href="/games/">a western settlement builder</a> for Steam. It's the long-haul project, the one that gets the late nights. It doesn't have a public name yet.</p>
+        <p>None of the apps have shipped yet — all four are still in development. When the first one launches, the newsletter is where it gets announced.</p>
         <h2>How I work</h2>
         <p>Things ship when they're done, not when a quarter ends. Everything I release stays supported — the <a href="/support/">support email</a> goes to me, and bugs get fixed by the person who wrote them. And I don't do dark patterns: no fake urgency, no streak guilt, <a href="/privacy/">no trackers on this site</a>.</p>
         <h2>The name</h2>
@@ -90,10 +93,10 @@
       </div></div>
     </section>
 
-    <section class="sec-tight">
+    <section class="sec-tight" aria-labelledby="follow-title">
       <div class="container">
         <div class="news-card rv">
-          <h2>Follow along.</h2>
+          <h2 id="follow-title">Follow along.</h2>
           <p>One email when something real happens: a launch, the game's name, the Steam page.</p>
           <form class="subscribe" data-topic="Schill Labs updates" novalidate>
             <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required>
@@ -130,7 +133,7 @@
             <li><a href="/apps/dryfire-trainer/">Dryfire Trainer</a></li>
             <li><a href="/apps/swing-loop/">Swing Loop</a></li>
             <li><a href="/apps/bloom-doc/">Bloom Doc</a></li>
-            <li><a href="/games/">The western sim</a></li>
+            <li><a href="/games/">Untitled western sim</a></li>
           </ul>
         </div>
         <div>

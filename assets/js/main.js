@@ -4,6 +4,8 @@
 (() => {
   'use strict';
 
+  document.documentElement.classList.add('js');
+
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Nav scroll state ---------- */
@@ -21,11 +23,22 @@
     const setOpen = (open) => {
       burger.setAttribute('aria-expanded', String(open));
       menu.classList.toggle('open', open);
+      menu.inert = !open;
+      menu.setAttribute('aria-hidden', String(!open));
       document.body.style.overflow = open ? 'hidden' : '';
+      if (open) {
+        const first = menu.querySelector('a');
+        if (first) first.focus();
+      }
     };
+    menu.inert = true;
+    menu.setAttribute('aria-hidden', 'true');
     burger.addEventListener('click', () => setOpen(burger.getAttribute('aria-expanded') !== 'true'));
-    menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    window.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+    menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => { setOpen(false); burger.focus(); }));
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); burger.focus(); }
+    });
+    window.matchMedia('(min-width:921px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
   }
 
   /* ---------- Scroll reveal ---------- */
@@ -47,26 +60,6 @@
       card.style.setProperty('--my', `${e.clientY - r.top}px`);
     });
   });
-
-  /* ---------- Tilt ---------- */
-  if (!reduceMotion && matchMedia('(pointer:fine)').matches) {
-    document.querySelectorAll('.tilt').forEach((el) => {
-      let raf = 0;
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - 0.5;
-        const y = (e.clientY - r.top) / r.height - 0.5;
-        cancelAnimationFrame(raf);
-        raf = requestAnimationFrame(() => {
-          el.style.transform = `perspective(900px) rotateY(${x * 6}deg) rotateX(${y * -6}deg) translateY(-3px)`;
-        });
-      });
-      el.addEventListener('pointerleave', () => {
-        cancelAnimationFrame(raf);
-        el.style.transform = '';
-      });
-    });
-  }
 
   /* ---------- Hero particles ---------- */
   const canvas = document.getElementById('particles');
@@ -101,7 +94,6 @@
 
     let last = 0;
     const tick = (t) => {
-      if (document.hidden) { requestAnimationFrame(tick); return; }
       if (t - last < 1000 / 60) { requestAnimationFrame(tick); return; }
       last = t;
       ctx.clearRect(0, 0, w, h);
@@ -137,27 +129,40 @@
     };
 
     resize();
-    window.addEventListener('resize', resize);
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 150);
+    });
     requestAnimationFrame(tick);
   }
 
   /* ---------- Newsletter / notify forms ----------
-     Zero-backend by default: falls back to a prefilled email draft.
-     To upgrade: create a free form endpoint (e.g. Formspree) and paste it below. */
+     Posts to FORM_ENDPOINT once one is configured (e.g. Formspree).
+     Until then the form says so honestly instead of faking a signup. */
   const FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxx'
   const CONTACT_EMAIL = 'hello@schilllabs.com';
 
   document.querySelectorAll('form.subscribe').forEach((form) => {
+    const input = form.querySelector('input[type="email"]');
+    const msg = form.parentElement.querySelector('.form-msg');
+    if (input) {
+      input.addEventListener('input', () => {
+        input.removeAttribute('aria-invalid');
+        if (msg) msg.textContent = '';
+      });
+    }
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const input = form.querySelector('input[type="email"]');
-      const msg = form.parentElement.querySelector('.form-msg');
+      if (!input) return;
       const email = (input.value || '').trim();
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        input.setAttribute('aria-invalid', 'true');
         if (msg) msg.textContent = 'Please enter a valid email address.';
         input.focus();
         return;
       }
+      input.removeAttribute('aria-invalid');
       const topic = form.dataset.topic || 'Schill Labs updates';
       if (FORM_ENDPOINT) {
         try {
@@ -173,10 +178,7 @@
           if (msg) msg.textContent = 'Hmm, that didn’t go through — try again in a minute.';
         }
       } else {
-        const subject = encodeURIComponent(`Subscribe: ${topic}`);
-        const body = encodeURIComponent(`Please add ${email} to the ${topic} list.\n\n(Sent from schilllabs.com)`);
-        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
-        if (msg) msg.textContent = 'Opening your email app to confirm…';
+        if (msg) msg.textContent = `Not collecting addresses just yet — email ${CONTACT_EMAIL} and I'll add you to the launch list.`;
       }
     });
   });

@@ -5,15 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found — Schill Labs</title>
   <meta name="description" content="That page doesn't exist.">
-  <link rel="canonical" href="https://schilllabs.com/404.html">
   <meta name="theme-color" content="#05060A">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, follow">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Schill Labs">
   <meta property="og:title" content="Page Not Found — Schill Labs">
   <meta property="og:description" content="That page doesn't exist.">
-  <meta property="og:url" content="https://schilllabs.com/404.html">
   <meta property="og:image" content="https://schilllabs.com/assets/img/og/og-home.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -23,7 +21,7 @@
   <meta name="twitter:image" content="https://schilllabs.com/assets/img/og/og-home.png">
 
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
@@ -41,6 +39,7 @@
         <img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">
         <span>SCHILL&nbsp;<b>LABS</b></span>
       </a>
+      <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="/games/">Games</a></li>
         <li><a href="/apps/">Apps</a></li>
@@ -50,6 +49,7 @@
         <li><a href="/support/">Support</a></li>
         <li class="nav-cta"><a class="btn btn-primary btn-sm" href="/#newsletter">Get updates</a></li>
       </ul>
+      </nav>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -65,17 +65,19 @@
     <a class="btn btn-primary" href="/#newsletter">Get updates</a>
   </nav>
 
-  <main id="main">
-    <section class="err-wrap">
+  <main id="main" tabindex="-1">
+    <section class="err-wrap" aria-labelledby="err-title">
       <div class="hero-glow g1" aria-hidden="true"></div>
       <div class="hero-glow g2" aria-hidden="true"></div>
       <div class="container">
         <div class="err-code" aria-hidden="true">404</div>
-        <h1 style="font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:1rem">That page doesn't exist.</h1>
+        <h1 id="err-title" style="font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:1rem">That page doesn't exist.</h1>
         <p class="lead" style="max-width:44ch;margin:0 auto 2.2rem">It may have moved, or the link was wrong. If something on this site sent you here, tell me and I'll fix it.</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="/">Go home <span class="arr">→</span></a>
-          <a class="btn btn-ghost" href="/support/">Report a broken link</a>
+          <a href="/apps/">Browse the apps</a>
+          <a href="/games/">See the game</a>
+          <a class="btn btn-ghost" href="mailto:hello@schilllabs.com?subject=Broken%20link">Report a broken link</a>
         </div>
       </div>
     </section>
@@ -105,7 +107,7 @@
             <li><a href="/apps/dryfire-trainer/">Dryfire Trainer</a></li>
             <li><a href="/apps/swing-loop/">Swing Loop</a></li>
             <li><a href="/apps/bloom-doc/">Bloom Doc</a></li>
-            <li><a href="/games/">The western sim</a></li>
+            <li><a href="/games/">Untitled western sim</a></li>
           </ul>
         </div>
         <div>

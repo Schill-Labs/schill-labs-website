@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloom Doc — Keep your plants alive · Schill Labs</title>
+  <title>Bloom Doc — Schill Labs</title>
   <meta name="description" content="Bloom Doc identifies your plants, helps diagnose problems, and keeps care schedules simple. Coming to iOS and Android from Schill Labs.">
   <link rel="canonical" href="https://schilllabs.com/apps/bloom-doc/">
   <meta name="theme-color" content="#05060A">
@@ -11,19 +11,19 @@
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Schill Labs">
-  <meta property="og:title" content="Bloom Doc — Keep your plants alive · Schill Labs">
+  <meta property="og:title" content="Bloom Doc — Schill Labs">
   <meta property="og:description" content="Bloom Doc identifies your plants, helps diagnose problems, and keeps care schedules simple. Coming to iOS and Android from Schill Labs.">
   <meta property="og:url" content="https://schilllabs.com/apps/bloom-doc/">
   <meta property="og:image" content="https://schilllabs.com/assets/img/og/og-bloom-doc.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Bloom Doc — Keep your plants alive · Schill Labs">
+  <meta name="twitter:title" content="Bloom Doc — Schill Labs">
   <meta name="twitter:description" content="Bloom Doc identifies your plants, helps diagnose problems, and keeps care schedules simple. Coming to iOS and Android from Schill Labs.">
   <meta name="twitter:image" content="https://schilllabs.com/assets/img/og/og-bloom-doc.png">
 
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
@@ -54,6 +54,7 @@
         <img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">
         <span>SCHILL&nbsp;<b>LABS</b></span>
       </a>
+      <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="/games/">Games</a></li>
         <li><a href="/apps/" aria-current="page">Apps</a></li>
@@ -63,6 +64,7 @@
         <li><a href="/support/">Support</a></li>
         <li class="nav-cta"><a class="btn btn-primary btn-sm" href="/#newsletter">Get updates</a></li>
       </ul>
+      </nav>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
@@ -70,7 +72,7 @@
   </header>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
     <a href="/games/">Games</a>
-    <a href="/apps/">Apps</a>
+    <a href="/apps/" aria-current="page">Apps</a>
     <a href="/news/">News</a>
     <a href="/about/">About</a>
     <a href="/press/">Press</a>
@@ -78,7 +80,7 @@
     <a class="btn btn-primary" href="/#newsletter">Get updates</a>
   </nav>
 
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="app-hero" style="--acc:#5FD4A2">
       <div class="page-glow" aria-hidden="true" style="background:radial-gradient(circle,color-mix(in srgb,#5FD4A2 16%,transparent),transparent 65%)"></div>
       <div class="container app-hero-grid">
@@ -90,7 +92,7 @@
           <div class="store-row">
             <span class="store-pill" style="--acc:#5FD4A2"><em>Coming soon to</em><b>App Store</b></span>
             <span class="store-pill" style="--acc:#5FD4A2"><em>Coming soon to</em><b>Google Play</b></span>
-            <a class="store-pill" style="--acc:#5FD4A2" href="/#newsletter"><em>Newsletter</em><b>Get notified →</b></a>
+            <a class="store-pill" style="--acc:#5FD4A2" href="#notify"><em>Newsletter</em><b>Get notified →</b></a>
           </div>
         </div>
         <div class="rv rv-d2">
@@ -160,13 +162,17 @@
             <summary>Does it work offline?</summary>
             <p class="a">Care schedules and your plant list work offline. Photo identification needs a connection.</p>
           </details>
+          <details>
+            <summary>Will it be free?</summary>
+            <p class="a">Pricing isn't final yet. Whatever it ends up being, there won't be any sleazy monetization.</p>
+          </details>
         </div>
       </div>
     </section>
 
     <section class="sec-tight">
       <div class="container">
-        <div class="news-card rv">
+        <div class="news-card rv" id="notify">
           <h2>Want to know when it's out?</h2>
           <p>One email when Bloom Doc ships. That's it.</p>
           <form class="subscribe" data-topic="Bloom Doc launch" novalidate>
@@ -204,7 +210,7 @@
             <li><a href="/apps/dryfire-trainer/">Dryfire Trainer</a></li>
             <li><a href="/apps/swing-loop/">Swing Loop</a></li>
             <li><a href="/apps/bloom-doc/">Bloom Doc</a></li>
-            <li><a href="/games/">The western sim</a></li>
+            <li><a href="/games/">Untitled western sim</a></li>
           </ul>
         </div>
         <div>
