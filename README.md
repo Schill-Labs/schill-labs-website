@@ -1,6 +1,6 @@
 # Schill Labs — schilllabs.com
 
-The official website of **Schill Labs**, Michael Schillereff's independent studio — phone apps (Mello, Dryfire Trainer, Swing Loop, Bloom Doc) and an unannounced western settlement builder for Steam.
+The official website of **Schill Labs**, an independent one-person studio — phone apps (Mello, Dryfire Trainer, Swing Loop, Bloom Doc) and an unannounced western settlement builder for Steam.
 
 Hand-built static site. **No frameworks, no build step, no trackers.** Edit an HTML file, push, done.
 
