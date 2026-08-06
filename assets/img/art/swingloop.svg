@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Swing Loop key art">
+  <defs>
+    <linearGradient id="slBg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E2016"/>
+      <stop offset="1" stop-color="#07130C"/>
+    </linearGradient>
+    <linearGradient id="slLoop" x1="24" y1="130" x2="176" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#59D98C"/>
+      <stop offset="1" stop-color="#C8F169"/>
+    </linearGradient>
+    <radialGradient id="slGlow" cx="128" cy="72" r="84" gradientUnits="userSpaceOnUse">
+      <stop offset=".35" stop-color="#7FE7A5" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7FE7A5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#slBg)"/>
+  <circle cx="128" cy="72" r="84" fill="url(#slGlow)"/>
+  <!-- looping swing trace -->
+  <path d="M30 138c14-44 44-74 62-74 14 0 18 12 10 26-10 17-28 30-24 44 3.4 12 22 14 44 4 18-8.2 32-22 40-38" stroke="url(#slLoop)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M30 138c14-44 44-74 62-74 14 0 18 12 10 26" stroke="#EFFFF2" stroke-opacity=".35" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 10"/>
+  <!-- tempo dots -->
+  <circle cx="52" cy="106" r="4" fill="#59D98C" opacity=".55"/>
+  <circle cx="74" cy="82" r="4.6" fill="#7FE39B" opacity=".7"/>
+  <circle cx="99" cy="66" r="5.2" fill="#A3EC82" opacity=".85"/>
+  <!-- golf ball -->
+  <circle cx="162" cy="100" r="21" fill="#F4FFF6"/>
+  <circle cx="155" cy="94" r="2" fill="#BBD4C0"/>
+  <circle cx="164" cy="92" r="2" fill="#BBD4C0"/>
+  <circle cx="159" cy="102" r="2" fill="#BBD4C0"/>
+  <circle cx="168" cy="101" r="2" fill="#BBD4C0"/>
+  <circle cx="163" cy="110" r="2" fill="#BBD4C0"/>
+  <!-- ground -->
+  <path d="M36 168h128" stroke="#2C4A36" stroke-width="6" stroke-linecap="round"/>
+  <path d="M60 168v-8M100 168v-6M140 168v-8" stroke="#3E6A4C" stroke-width="4" stroke-linecap="round"/>
+</svg>

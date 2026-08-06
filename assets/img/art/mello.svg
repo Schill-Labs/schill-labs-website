@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="Mello key art">
+  <defs>
+    <linearGradient id="meBg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1B1430"/>
+      <stop offset="1" stop-color="#100B1E"/>
+    </linearGradient>
+    <linearGradient id="meBlob" x1="60" y1="52" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D9B8FF"/>
+      <stop offset=".6" stop-color="#A98BF7"/>
+      <stop offset="1" stop-color="#FF9E8A"/>
+    </linearGradient>
+    <radialGradient id="meGlow" cx="100" cy="96" r="86" gradientUnits="userSpaceOnUse">
+      <stop offset=".45" stop-color="#B79CFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#B79CFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#meBg)"/>
+  <circle cx="100" cy="96" r="86" fill="url(#meGlow)"/>
+  <!-- stars -->
+  <circle cx="42" cy="44" r="1.8" fill="#CBB6FF" opacity=".9"/>
+  <circle cx="164" cy="58" r="1.4" fill="#FFD9C4" opacity=".8"/>
+  <circle cx="146" cy="30" r="1.1" fill="#CBB6FF" opacity=".6"/>
+  <circle cx="30" cy="118" r="1.2" fill="#CBB6FF" opacity=".5"/>
+  <circle cx="176" cy="126" r="1.5" fill="#FFD9C4" opacity=".6"/>
+  <path d="M58 26l1.2 3.4 3.4 1.2-3.4 1.2-1.2 3.4-1.2-3.4-3.4-1.2 3.4-1.2z" fill="#E8DBFF" opacity=".85"/>
+  <!-- soft blob moon -->
+  <path d="M100 44c26 0 46 16 48 40 1.8 22-12 44-38 48-24 3.6-46-8-52-30-5.6-21 6-42 22-51 6.4-3.6 13-7 20-7z" fill="url(#meBlob)"/>
+  <path d="M78 74c4-8 12-14 22-15" stroke="#FFF3EA" stroke-opacity=".75" stroke-width="5" stroke-linecap="round"/>
+  <!-- zen ripples -->
+  <path d="M32 152c10 0 13-6 24-6s14 6 24 6 13-6 24-6 14 6 24 6 13-6 24-6" stroke="#B79CFF" stroke-opacity=".55" stroke-width="4" stroke-linecap="round"/>
+  <path d="M40 168c9 0 12-5 21-5s12 5 21 5 12-5 21-5 12 5 21 5 12-5 21-5" stroke="#8F6FE0" stroke-opacity=".4" stroke-width="4" stroke-linecap="round"/>
+</svg>
