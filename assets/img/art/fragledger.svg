@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-label="FragLedger key art">
+  <defs>
+    <linearGradient id="flBg" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A1014"/>
+      <stop offset="1" stop-color="#0C0709"/>
+    </linearGradient>
+    <linearGradient id="flMark" x1="70" y1="40" x2="150" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF8A72"/>
+      <stop offset="1" stop-color="#FF4D4D"/>
+    </linearGradient>
+    <radialGradient id="flGlow" cx="100" cy="96" r="90" gradientUnits="userSpaceOnUse">
+      <stop offset=".4" stop-color="#FF5E62" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#FF5E62" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#flBg)"/>
+  <circle cx="100" cy="96" r="90" fill="url(#flGlow)"/>
+  <!-- ledger page -->
+  <rect x="48" y="38" width="104" height="128" rx="14" fill="#1C1216" stroke="#3A2428" stroke-width="3"/>
+  <path d="M66 64h68M66 80h68M66 96h52M66 112h60M66 128h40" stroke="#5A3438" stroke-width="4" stroke-linecap="round"/>
+  <!-- rating tick -->
+  <path d="M70 148h18" stroke="url(#flMark)" stroke-width="5" stroke-linecap="round"/>
+  <!-- crosshair / frag mark -->
+  <circle cx="138" cy="54" r="16" stroke="url(#flMark)" stroke-width="4"/>
+  <path d="M138 40v6M138 62v6M124 54h6M146 54h6" stroke="#FF8A72" stroke-width="3.2" stroke-linecap="round"/>
+  <circle cx="138" cy="54" r="3.2" fill="#FF5E62"/>
+</svg>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FragLedger — Schill Labs</title>
+  <meta name="description" content="FragLedger is a live CS2 match ledger. Paste a share code, parse the official Valve demo, and keep the rounds, deaths, and a published Frag Rating in one place.">
+  <link rel="canonical" href="https://schilllabs.com/software/fragledger/">
+  <meta name="theme-color" content="#05060A">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Schill Labs">
+  <meta property="og:title" content="FragLedger — Schill Labs">
+  <meta property="og:description" content="FragLedger is a live CS2 match ledger. Paste a share code, parse the official Valve demo, and keep the rounds, deaths, and a published Frag Rating in one place.">
+  <meta property="og:url" content="https://schilllabs.com/software/fragledger/">
+  <meta property="og:image" content="https://schilllabs.com/assets/img/og/og-fragledger.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FragLedger — Schill Labs">
+  <meta name="twitter:description" content="FragLedger is a live CS2 match ledger. Paste a share code, parse the official Valve demo, and keep the rounds, deaths, and a published Frag Rating in one place.">
+  <meta name="twitter:image" content="https://schilllabs.com/assets/img/og/og-fragledger.png">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FragLedger",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web",
+    "description": "A CS2 match ledger built from official Valve demos: share codes, match receipts, and a published Frag Rating.",
+    "url": "https://fragledger.com/",
+    "image": "https://schilllabs.com/assets/img/art/fragledger.svg",
+    "author": { "@type": "Organization", "name": "Schill Labs", "url": "https://schilllabs.com/" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="/" aria-label="Schill Labs home">
+        <img src="/assets/img/logo-mark.svg" alt="" width="34" height="34">
+        <span>SCHILL&nbsp;<b>LABS</b></span>
+      </a>
+      <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="/games/">Games</a></li>
+        <li><a href="/apps/">Apps</a></li>
+        <li><a href="/software/" aria-current="page">Software</a></li>
+        <li><a href="/news/">News</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/press/">Press</a></li>
+        <li><a href="/support/">Support</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-sm" href="/#newsletter">Get updates</a></li>
+      </ul>
+      </nav>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="/games/">Games</a>
+    <a href="/apps/">Apps</a>
+    <a href="/software/" aria-current="page">Software</a>
+    <a href="/news/">News</a>
+    <a href="/about/">About</a>
+    <a href="/press/">Press</a>
+    <a href="/support/">Support</a>
+    <a class="btn btn-primary" href="/#newsletter">Get updates</a>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <section class="app-hero" style="--acc:#FF5E62">
+      <div class="page-glow" aria-hidden="true" style="background:radial-gradient(circle,color-mix(in srgb,#FF5E62 16%,transparent),transparent 65%)"></div>
+      <div class="container app-hero-grid">
+        <div class="rv">
+          <div class="art-lg"><img src="/assets/img/art/fragledger.svg" alt="FragLedger icon art"></div>
+          <span class="eyebrow acc" style="--acc:#FF5E62">CS2 · Match ledger</span>
+          <h1>Your CS2 matches, kept as a ledger.</h1>
+          <p class="lead">FragLedger downloads the official Valve demo from a share code and saves the whole match: scoreboard, rounds, deaths, and a Frag Rating with a published formula. Sign in with Steam once and tracked games stay in one place.</p>
+          <div class="store-row">
+            <a class="store-pill" style="--acc:#FF5E62" href="https://fragledger.com/" rel="noopener"><em>Live now at</em><b>fragledger.com</b></a>
+            <a class="store-pill" style="--acc:#FF5E62" href="https://fragledger.com/dashboard" rel="noopener"><em>Signed-in</em><b>Open dashboard →</b></a>
+            <a class="store-pill" style="--acc:#FF5E62" href="https://fragledger.com/pro" rel="noopener"><em>Practice from demos</em><b>FragLedger Pro</b></a>
+          </div>
+        </div>
+        <div class="rv rv-d2">
+          <div class="desk" style="--acc:#FF5E62">
+            <div class="chrome" aria-hidden="true"><i></i><i></i><i></i></div>
+            <div class="screen">
+              <img src="/assets/img/art/fragledger.svg" alt="">
+              <span class="t">FragLedger</span>
+              <span class="s">Live · fragledger.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-tight">
+      <div class="container">
+        <div class="sec-head rv">
+          <div>
+            <span class="eyebrow acc" style="--acc:#FF5E62">What it does</span>
+            <h2>What's in it.</h2>
+          </div>
+        </div>
+        <div class="feat-grid">
+          <div class="card feat rv" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3.5" y="3.5" width="13" height="13" rx="3" stroke="#FF5E62" stroke-width="1.5"/><path d="M7 8h6M7 10.5h6M7 13h4" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3>Official Valve demos</h3><p>The scoreboard is a summary. The demo is the ordered record. FragLedger is built around the second one.</p>
+          </div>
+          <div class="card feat rv rv-d1" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M13 7l3 3-3 3" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Share codes</h3><p>Paste a match share code with your Game Authentication Code. FragLedger resolves it, downloads the demo, and files the match.</p>
+          </div>
+          <div class="card feat rv rv-d2" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#FF5E62" stroke-width="1.5"/><path d="M10 6v4l2.6 2.6" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3>Published Frag Rating</h3><p>A rating with a formula you can read. Components stay open. Nothing hides behind a mystery number.</p>
+          </div>
+          <div class="card feat rv" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 15V5h10v10" stroke="#FF5E62" stroke-width="1.5" stroke-linejoin="round"/><path d="M5 12l3-3 2.5 2.5L14 7" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Missing stays missing</h3><p>If the parser can't verify a stat, it shows as missing. Zero means a verified zero, not a guess.</p>
+          </div>
+          <div class="card feat rv rv-d1" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="5" width="12" height="11" rx="2" stroke="#FF5E62" stroke-width="1.5"/><path d="M7 9h6M7 12h4" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3>Match receipts</h3><p>Rounds, economy, utility, and kill context stay tied to the same match instead of dissolving into a weekly average.</p>
+          </div>
+          <div class="card feat rv rv-d2" style="--acc:#FF5E62">
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#FF5E62" stroke-width="1.5"/><circle cx="10" cy="10" r="2.2" fill="#FF5E62"/><path d="M10 3v2M10 15v2M3 10h2M15 10h2" stroke="#FF5E62" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <h3>Pro drills from your deaths</h3><p>Pro turns those demos into practice cards: the angle, the weapon, and the spot that keeps costing you rounds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-tight">
+      <div class="container">
+        <span class="eyebrow rv">Details</span>
+        <h2 class="rv">The short version.</h2>
+        <div class="teaser-list rv">
+          <div class="teaser-item"><span class="k">Product</span><span class="v">CS2 match ledger</span></div>
+          <div class="teaser-item"><span class="k">Platform</span><span class="v">Web — fragledger.com</span></div>
+          <div class="teaser-item"><span class="k">Status</span><span class="v">Live</span></div>
+          <div class="teaser-item"><span class="k">Sign-in</span><span class="v">Steam OpenID</span></div>
+          <div class="teaser-item"><span class="k">Shortcut</span><span class="v">Add frag before steam on any Steam profile URL</span></div>
+          <div class="teaser-item"><span class="k">Pro</span><span class="v">Solo $5.99/mo · team of 5 $24.99/mo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-tight">
+      <div class="container">
+        <span class="eyebrow rv">Questions</span>
+        <h2 class="rv">Common questions.</h2>
+        <div class="faq rv">
+          <details open>
+            <summary>Is FragLedger live?</summary>
+            <p class="a">Yes. The product is up at <a href="https://fragledger.com/">fragledger.com</a>. Sign in with Steam to start a ledger.</p>
+          </details>
+          <details>
+            <summary>Do I need Pro?</summary>
+            <p class="a">No. The free tier keeps your match history. Pro is for practice cards, utility from your own demos, and session context.</p>
+          </details>
+          <details>
+            <summary>Is this affiliated with Valve?</summary>
+            <p class="a">No. FragLedger is not affiliated with Valve. Steam and Counter-Strike are trademarks of Valve Corporation.</p>
+          </details>
+          <details>
+            <summary>Where do I get support?</summary>
+            <p class="a">Email <a href="mailto:hello@schilllabs.com?subject=FragLedger%20support">hello@schilllabs.com</a> with FragLedger in the subject, or use the help links on the live site.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-tight">
+      <div class="container">
+        <div class="news-card rv" id="open">
+          <h2>Open the ledger.</h2>
+          <p>The product lives on its own domain. This page is the studio listing.</p>
+          <div class="hero-ctas" style="justify-content:center">
+            <a class="btn btn-primary" href="https://fragledger.com/" rel="noopener">Go to FragLedger <span class="arr">→</span></a>
+            <a class="btn btn-ghost" href="/support/">Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="/"><img src="/assets/img/logo-mark.svg" alt="" width="34" height="34"><span>SCHILL&nbsp;<b>LABS</b></span></a>
+          <p class="tag">Software, phone apps, and PC games from an independent one-person studio.</p>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/press/">Press kit</a></li>
+            <li><a href="/support/">Support</a></li>
+            <li><a href="mailto:hello@schilllabs.com">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li><a href="/software/fragledger/">FragLedger</a></li>
+            <li><a href="/software/live-qa/">Live QA</a></li>
+            <li><a href="/apps/mello/">Mello</a></li>
+            <li><a href="/apps/dryfire-trainer/">Dryfire Trainer</a></li>
+            <li><a href="/apps/swing-loop/">Swing Loop</a></li>
+            <li><a href="/apps/bloom-doc/">Bloom Doc</a></li>
+            <li><a href="/games/">Untitled western sim</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="/terms/">Terms of use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Schill Labs. All rights reserved.</span>
+        <span class="mono">SCHILLLABS.COM · NO TRACKERS</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

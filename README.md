@@ -1,14 +1,17 @@
 # Schill Labs — schilllabs.com
 
-The official website of **Schill Labs**, an independent one-person studio — phone apps (Mello, Dryfire Trainer, Swing Loop, Bloom Doc) and an unannounced western settlement builder for Steam.
+The official website of **Schill Labs**, an independent one-person studio — web software (FragLedger, Live QA), phone apps (Mello, Dryfire Trainer, Swing Loop, Bloom Doc), and an unannounced western settlement builder for Steam.
 
 Hand-built static site. **No frameworks, no build step, no trackers.** Edit an HTML file, push, done.
 
 ## Structure
 
 ```
-├── index.html              Home — hero, featured game, app grid, newsletter
+├── index.html              Home — hero, software, featured game, app grid, newsletter
 ├── games/                  Western settlement sim teaser page
+├── software/               Web products index
+│   ├── fragledger/         Live CS2 match ledger (points at fragledger.com)
+│   └── live-qa/            Company QA bot
 ├── apps/                   Apps index
 │   ├── mello/              Per-app landing pages…
 │   ├── dryfire-trainer/    …each one is a store-ready marketing URL

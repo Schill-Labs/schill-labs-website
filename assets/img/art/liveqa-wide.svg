@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Live QA key art: a company question-and-answer bot">
+  <defs>
+    <linearGradient id="lqwSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08111E"/>
+      <stop offset=".6" stop-color="#0C1830"/>
+      <stop offset="1" stop-color="#10243C"/>
+    </linearGradient>
+    <radialGradient id="lqwGlow" cx=".3" cy=".35" r=".55">
+      <stop offset="0" stop-color="#4ECBFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#4ECBFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#lqwSky)"/>
+  <rect width="1600" height="900" fill="url(#lqwGlow)"/>
+  <!-- faint chat rails -->
+  <g stroke="#1C3450" stroke-width="1" opacity=".5">
+    <path d="M0 200h1600M0 450h1600M0 700h1600"/>
+  </g>
+  <!-- question -->
+  <rect x="180" y="210" width="620" height="160" rx="36" fill="#122038" stroke="#2A4A6C" stroke-width="3"/>
+  <path d="M230 270h360M230 318h220" stroke="#6A88B0" stroke-width="12" stroke-linecap="round"/>
+  <path d="M240 370l-28 48 70-36" fill="#122038" stroke="#2A4A6C" stroke-width="3" stroke-linejoin="round"/>
+  <!-- answer -->
+  <rect x="760" y="430" width="660" height="180" rx="36" fill="#4ECBFF"/>
+  <path d="M820 498h420M820 552h260" stroke="#073044" stroke-width="12" stroke-linecap="round" opacity=".65"/>
+  <path d="M1320 610l36 50-80-34" fill="#4ECBFF"/>
+  <!-- live pill -->
+  <rect x="180" y="620" width="220" height="72" rx="36" fill="#122038" stroke="#2A4A6C" stroke-width="3"/>
+  <circle cx="230" cy="656" r="12" fill="#4ECBFF"/>
+  <circle cx="230" cy="656" r="20" stroke="#4ECBFF" stroke-width="3" opacity=".4"/>
+  <text x="260" y="666" fill="#C8E8F8" font-family="ui-monospace,monospace" font-size="26" letter-spacing="4">LIVE</text>
+</svg>
