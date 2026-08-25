@@ -41,6 +41,8 @@ Both stores require working URLs at submission time — this site provides them:
 |------------------------|-----------------------------------------------|
 | Support URL            | `https://schilllabs.com/support/`             |
 | Privacy Policy URL     | `https://schilllabs.com/privacy/`             |
+| Diet App privacy       | `https://schilllabs.com/diet/privacy.html`    |
+| Diet App terms         | `https://schilllabs.com/diet/terms.html`      |
 | Marketing URL (per app)| `https://schilllabs.com/apps/<app-name>/`     |
 
 > Before each launch, update `/privacy/` with that app's specific data disclosures. The current policy covers the principles and flags that per-app details are coming.
