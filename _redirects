@@ -2,3 +2,5 @@
 /diet/terms.html /diet/terms 200
 https://www.schilllabs.com/* https://schilllabs.com/:splat 301
 https://schill-labs.pages.dev/* https://schilllabs.com/:splat 301
+/apps/dryfire-trainer/* /apps/ 301
+/apps/dryfire-trainer /apps/ 301
