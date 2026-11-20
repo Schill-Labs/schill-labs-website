@@ -312,6 +312,9 @@ p.lead{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--text)}
 .footer ul a:hover{color:var(--text-hi)}
 .footer .brand{margin-bottom:1rem}
 .footer .tag{max-width:30ch;font-size:.95rem;color:var(--text-dim)}
+.footer-addr{font-style:normal;margin-top:1rem;font-size:.85rem;line-height:1.6;color:var(--text-dim)}
+.footer-addr a{color:var(--text-dim)}
+.footer-addr a:hover{color:var(--text-hi)}
 .footer-bottom{border-top:1px solid var(--line);padding-top:1.8rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.85rem;color:var(--text-dim)}
 .footer-bottom .mono{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em}
 
