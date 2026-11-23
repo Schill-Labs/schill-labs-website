@@ -15,3 +15,4 @@ https://schill-labs.pages.dev/* https://schilllabs.com/:splat 301
 /README.md / 301
 /.gitignore / 301
 /assets/img/og/:file /assets/img/share/:file 301
+/assets/img/share/og-live-qa.png /assets/img/share/og-software.png 301
