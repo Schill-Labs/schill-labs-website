@@ -138,10 +138,10 @@
   }
 
   /* ---------- Newsletter / notify forms ----------
-     Posts to FORM_ENDPOINT once one is configured (e.g. Formspree).
-     Until then the form says so honestly instead of faking a signup. */
-  const FORM_ENDPOINT = ''; // e.g. 'https://formspree.io/f/xxxxxxx'
-  const CONTACT_EMAIL = 'hello@schilllabs.com';
+     Posts to /api/subscribe (the schill-labs-signups Worker in workers/signups),
+     which saves the signup and emails CONTACT_EMAIL. */
+  const FORM_ENDPOINT = '/api/subscribe';
+  const CONTACT_EMAIL = 'michael@schilllabs.com';
 
   document.querySelectorAll('form.subscribe').forEach((form) => {
     const input = form.querySelector('input[type="email"]');
@@ -169,13 +169,13 @@
           const res = await fetch(FORM_ENDPOINT, {
             method: 'POST',
             headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, topic }),
+            body: JSON.stringify({ email, topic, page: location.pathname }),
           });
           if (!res.ok) throw new Error('bad status');
           form.reset();
           if (msg) msg.textContent = "You're on the list. Talk soon.";
         } catch {
-          if (msg) msg.textContent = 'Hmm, that didn’t go through — try again in a minute.';
+          if (msg) msg.textContent = `Hmm, that didn’t go through. Try again in a minute, or email ${CONTACT_EMAIL}.`;
         }
       } else {
         if (msg) msg.textContent = `Not collecting addresses just yet — email ${CONTACT_EMAIL} and I'll add you to the launch list.`;

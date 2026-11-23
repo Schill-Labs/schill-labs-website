@@ -1,4 +1,4 @@
-Contact: mailto:hello@schilllabs.com
+Contact: mailto:michael@schilllabs.com
 Policy: https://schilllabs.com/support/#security
 Expires: 2027-08-06T00:00:00.000Z
 Preferred-Languages: en

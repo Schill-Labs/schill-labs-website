@@ -57,17 +57,18 @@ Both stores require working URLs at submission time — this site provides them:
 - **Steam page goes live** — on `games/index.html` and `index.html`, point the ember buttons at the Steam URL (`https://store.steampowered.com/app/<id>`) and change the "Steam page coming" chips to "Wishlist on Steam". When the name is announced, replace "western settlement builder" / "the western sim" with the real title across the site.
 - **Store badges go live** — in each `apps/*/index.html`, swap the "Coming soon" `store-pill`s for links to the real listings.
 
-## Newsletter form (2-minute upgrade)
+## Newsletter forms
 
-The email forms work out of the box by opening a pre-filled email draft to `hello@schilllabs.com` — zero backend. To collect signups automatically instead:
+Every `form.subscribe` posts `{ email, topic, page }` to `/api/subscribe`. That path is served by the Worker in `workers/signups/` (zone route on schilllabs.com, Cloudflare account `0c33ce7c…`), not by Pages. It saves each signup in the `SIGNUPS` KV namespace (key `sub:<topic>:<email>`) and emails a notification to michael@schilllabs.com from `signups@notify.schilllabs.com` (Cloudflare Email Sending on the notify subdomain; the apex MX stays on Google Workspace).
 
-1. Create a free form at [formspree.io](https://formspree.io) (or Buttondown/Mailchimp).
-2. In `assets/js/main.js`, set `FORM_ENDPOINT = 'https://formspree.io/f/XXXXXXX'`.
-3. Add the endpoint's origin to `connect-src` in `_headers` (CSP), e.g. `connect-src 'self' https://formspree.io`.
+- Deploy the Worker: `cd workers/signups && npx wrangler deploy`
+- Watch it: `npx wrangler tail schill-labs-signups`
+- Export signups: `npx wrangler kv key list --binding SIGNUPS --prefix sub: --remote`
+- `workers/`, this README and `.gitignore` are `export-ignore`d, so `git archive` deploys of the site leave them out.
 
-## Email: hello@schilllabs.com
+## Email: michael@schilllabs.com
 
-The site uses `hello@schilllabs.com` everywhere. The domain is on Cloudflare, so this is a 3-minute free setup: Cloudflare dashboard → schilllabs.com → **Email → Email Routing** → add `hello@` as a custom address forwarding to your Gmail. (Or find-and-replace the address across the HTML files and `assets/js/main.js`.)
+The site uses `michael@schilllabs.com` everywhere. Mail for schilllabs.com is handled by Google Workspace (MX records point at Google).
 
 ## Hosting: Cloudflare Pages
 

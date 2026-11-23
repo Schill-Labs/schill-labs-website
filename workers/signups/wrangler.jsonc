@@ -1,0 +1,24 @@
+{
+  // Deploy: cd workers/signups && npx wrangler deploy
+  // Lives in the Cloudflare account that holds the schilllabs.com zone.
+  "name": "schill-labs-signups",
+  "account_id": "0c33ce7cdef7c3710711ad321820fe70",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "schilllabs.com/api/subscribe", "zone_name": "schilllabs.com" },
+    { "pattern": "www.schilllabs.com/api/subscribe", "zone_name": "schilllabs.com" }
+  ],
+  "kv_namespaces": [
+    { "binding": "SIGNUPS", "id": "527abd09569840818241d7b3a20b8e67" }
+  ],
+  "send_email": [
+    { "name": "EMAIL", "allowed_destination_addresses": ["michael@schilllabs.com"] }
+  ],
+  "vars": {
+    "NOTIFY_TO": "michael@schilllabs.com",
+    "NOTIFY_FROM": "signups@notify.schilllabs.com"
+  },
+  "observability": { "enabled": true }
+}
