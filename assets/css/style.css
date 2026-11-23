@@ -116,9 +116,8 @@ p.lead{font-size:clamp(1.05rem,1.6vw,1.3rem);color:var(--text)}
 }
 .nav.scrolled{background:rgba(6,7,11,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
 .nav-inner{width:min(1280px,94vw);margin-inline:auto;display:flex;align-items:center;gap:2rem}
-.brand{display:flex;align-items:center;gap:.7rem;font-family:var(--font-display);font-weight:700;font-size:1.15rem;color:var(--text-hi);letter-spacing:.02em}
-.brand img{width:34px;height:34px}
-.brand span b{background:var(--grad-spec);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:#F5F0E8;letter-spacing:-.01em}
+.brand img{width:36px;height:36px}
 .nav-inner>nav[aria-label="Primary"]{margin-left:auto}
 .nav-links{display:flex;gap:1.45rem;align-items:center;list-style:none}
 .nav-links a{font-size:.95rem;font-weight:500;color:var(--text);position:relative;padding:.3rem 0}

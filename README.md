@@ -28,8 +28,10 @@ Hand-built static site. **No frameworks, no build step, no trackers.** Edit an H
 │   ├── css/style.css       The entire design system (design tokens up top)
 │   ├── js/main.js          Particles, reveals, tilt, menu, forms — no deps
 │   ├── fonts/              Self-hosted woff2 (Space Grotesk, Inter, JetBrains Mono)
-│   ├── img/                Logo, favicons, product art (SVG), OG images
-│   └── press/              Downloadable press assets
+│   ├── img/                Product and game art
+│   │   ├── brand/          Schill Labs mark, favicon and app icons (new brand, Nov 2026)
+│   │   └── share/          1200×630 social share images
+│   └── press/              Downloadable press assets (brand/ logos + press-kit ZIP)
 ├── sitemap.xml · robots.txt · site.webmanifest
 ```
 
@@ -50,6 +52,7 @@ Both stores require working URLs at submission time — this site provides them:
 ## Common edits
 
 - **Copy/text** — edit the HTML files directly; every page is plain HTML.
+- **Brand** — the angular "S" mark (ink #141321, lavender #C6BCFF, cream #F5F0E8) comes from the hype repo's `campaigns/schill-labs/kit/`. `/assets/*` is cached as immutable, so a changed logo, icon or share image needs a new file name, not an overwrite.
 - **Colors/design tokens** — top of `assets/css/style.css` (`:root` block).
 - **Real screenshots** — on each app page, replace the `.phone .screen` contents with an `<img>` of the real screenshot.
 - **Steam page goes live** — on `games/index.html` and `index.html`, point the ember buttons at the Steam URL (`https://store.steampowered.com/app/<id>`) and change the "Steam page coming" chips to "Wishlist on Steam". When the name is announced, replace "western settlement builder" / "the western sim" with the real title across the site.
