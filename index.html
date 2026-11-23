@@ -6,7 +6,7 @@
   <title>Schill Labs — Software, Phone Apps &amp; PC Games</title>
   <meta name="description" content="Schill Labs: FragLedger, Live QA, phone apps, and PC games including Dumpling Shift and Cruise Magnate, coming to the Epic Games Store. A one-person studio, Schill Labs LLC.">
   <link rel="canonical" href="https://schilllabs.com/">
-  <meta name="theme-color" content="#05060A">
+  <meta name="theme-color" content="#141321">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
@@ -32,7 +32,7 @@
   <!-- Fonts / styles -->
   <link rel="preload" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css?v=20261122">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20261123b">
 
   <!-- Structured data -->
   <script type="application/ld+json">
@@ -108,69 +108,77 @@
   </nav>
 
   <main id="main" tabindex="-1">
-    <!-- ============ HERO ============ -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow g1" aria-hidden="true"></div>
-      <div class="hero-glow g2" aria-hidden="true"></div>
-      <div class="hero-glow g3" aria-hidden="true"></div>
-      <canvas id="particles" aria-hidden="true"></canvas>
-      <div class="container hero-inner">
-        <span class="hero-badge"><span class="dot" aria-hidden="true"></span>INDEPENDENT STUDIO · SOFTWARE · PHONE APPS · PC GAMES</span>
-        <h1 id="hero-title">Schill Labs makes<br>software, apps, and <span class="shimmer">games</span>.</h1>
-        <p class="lead">It's run by one developer. FragLedger is live, and three games, Dumpling Shift, Cruise Magnate and Blame Kevin, are coming to the Epic Games Store. Live QA and six apps are in the works behind them.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#games">See the games <span class="arr">→</span></a>
-          <a class="btn btn-ghost" href="#software">See the software</a>
-        </div>
-      </div>
-      <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><span class="line"></span></div>
-    </section>
-
-    <!-- ============ STATS ============ -->
-    <section class="stat-strip" aria-label="Studio at a glance">
-      <div class="stat-grid four">
-        <div class="stat rv"><b>1</b><span>Product live</span></div>
-        <div class="stat rv rv-d1"><b>2</b><span>Games coming soon</span></div>
-        <div class="stat rv rv-d2"><b>6</b><span>Apps in development</span></div>
-        <div class="stat rv rv-d3"><b>1</b><span>Developer</span></div>
-      </div>
-    </section>
-
-    <!-- ============ SOFTWARE ============ -->
-    <section class="sec" id="software" aria-labelledby="software-title">
-      <div class="container">
-        <div class="sec-head rv">
-          <div>
-            <span class="eyebrow">On the web</span>
-            <h2 id="software-title">The software.</h2>
+    <!-- ============ FEATURED GAMES ============ -->
+    <section class="showcase" aria-roledescription="carousel" aria-label="Featured games" data-showcase>
+      <div class="slides">
+        <article class="slide is-active" id="slide-cruise-magnate" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3: Cruise Magnate">
+          <div class="slide-media" style="background-image:url('/assets/img/games/cruise-magnate/ship-hero.jpg');background-position:right center"></div>
+          <div class="container slide-content">
+            <span class="slide-kicker">Out December 11, 2026</span>
+            <h2 class="slide-title"><img src="/assets/img/games/cruise-magnate/logo.png" alt="Cruise Magnate" width="1000" height="135"></h2>
+            <p class="slide-tag">From one leased liner to the world’s largest fleet. Plan itineraries across 203 real ports, ride out the hurricane season and buy out your rivals.</p>
+            <ul class="slide-meta" aria-label="Release details"><li>Epic Games Store</li><li>Windows PC</li><li>$9.99</li></ul>
+            <div class="slide-ctas">
+              <a class="btn btn-primary" href="/games/cruise-magnate/">Explore the game <span class="arr">→</span></a>
+              <a class="btn btn-ghost" href="#newsletter">Get launch emails</a>
+            </div>
           </div>
-          <p class="blurb">One product is already live. The other is a QA bot for companies, still in the shop.</p>
+        </article>
+        <article class="slide" id="slide-dumpling-shift" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3: Dumpling Shift" hidden>
+          <div class="slide-media" style="background-image:url('/assets/video/dumpling-shift-loop.jpg')"><video class="slide-video" muted playsinline loop preload="none" poster="/assets/video/dumpling-shift-loop.jpg" data-src="/assets/video/dumpling-shift-loop.mp4" aria-hidden="true"></video></div>
+          <div class="container slide-content">
+            <span class="slide-kicker">Coming soon</span>
+            <h2 class="slide-title"><img src="/assets/img/games/dumpling-shift/logo.png" alt="Dumpling Shift" width="632" height="475"></h2>
+            <p class="slide-tag">Fold, steam and serve. Run a dumpling stall in a Chinatown night market, grow it into your own dumpling house and win the Golden Steamer.</p>
+            <ul class="slide-meta" aria-label="Release details"><li>Epic Games Store</li><li>PC and Mac</li></ul>
+            <div class="slide-ctas">
+              <a class="btn btn-primary" href="/games/dumpling-shift/">Explore the game <span class="arr">→</span></a>
+              <a class="btn btn-ghost" href="#newsletter">Get launch emails</a>
+            </div>
+          </div>
+        </article>
+        <article class="slide" id="slide-blame-kevin" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3: Blame Kevin" hidden>
+          <div class="slide-media" style="background-image:url('/assets/img/games/blame-kevin/hero.jpg')"></div>
+          <div class="container slide-content">
+            <span class="slide-kicker">Out December 11, 2026</span>
+            <h2 class="slide-title"><img src="/assets/img/games/blame-kevin/logo.png" alt="Blame Kevin" width="1000" height="208"></h2>
+            <p class="slide-tag">Everyone went home. Brad didn’t. Sneak through five offices after hours, prank every marked desk and, when it goes wrong, blame Kevin.</p>
+            <ul class="slide-meta" aria-label="Release details"><li>Epic Games Store</li><li>Windows PC</li><li>$4.99</li></ul>
+            <div class="slide-ctas">
+              <a class="btn btn-primary" href="/games/blame-kevin/">Explore the game <span class="arr">→</span></a>
+              <a class="btn btn-ghost" href="#newsletter">Get launch emails</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="container showcase-nav">
+        <div class="showcase-tabs" role="tablist" aria-label="Choose a game">
+          <button class="showcase-tab is-active" role="tab" type="button" aria-controls="slide-cruise-magnate" aria-selected="true">
+            <span class="tab-num">01</span><span class="tab-name">Cruise Magnate</span><span class="tab-bar"><i></i></span>
+          </button>
+          <button class="showcase-tab" role="tab" type="button" aria-controls="slide-dumpling-shift" aria-selected="false" tabindex="-1">
+            <span class="tab-num">02</span><span class="tab-name">Dumpling Shift</span><span class="tab-bar"><i></i></span>
+          </button>
+          <button class="showcase-tab" role="tab" type="button" aria-controls="slide-blame-kevin" aria-selected="false" tabindex="-1">
+            <span class="tab-num">03</span><span class="tab-name">Blame Kevin</span><span class="tab-bar"><i></i></span>
+          </button>
         </div>
-        <div class="soft-grid">
-          <a class="card tilt soft-card rv" style="--acc:#FF5E62" href="/software/fragledger/">
-            <div class="art"><img src="/assets/img/art/fragledger-wide.svg" alt="FragLedger match ledger art" loading="lazy"></div>
-            <div class="body">
-              <div class="chip-row">
-                <span class="chip live">Live</span>
-                <span class="chip">CS2 · Web</span>
-              </div>
-              <h3>FragLedger</h3>
-              <p>A CS2 match ledger built from official Valve demos. Paste a share code and keep the rounds, the deaths, and a Frag Rating you can check.</p>
-              <div class="foot"><span class="status">fragledger.com</span><span class="more">Learn more <span class="arr">→</span></span></div>
-            </div>
-          </a>
-          <a class="card tilt soft-card rv rv-d1" style="--acc:#4ECBFF" href="/software/live-qa/">
-            <div class="art"><img src="/assets/img/art/liveqa-wide.svg" alt="Live QA chat art" loading="lazy"></div>
-            <div class="body">
-              <div class="chip-row">
-                <span class="chip">In development</span>
-                <span class="chip">Companies · QA bot</span>
-              </div>
-              <h3>Live QA</h3>
-              <p>A question-and-answer bot for companies. It answers from the company's own material so customers and staff stop hunting through folders.</p>
-              <div class="foot"><span class="status">Coming soon</span><span class="more">Learn more <span class="arr">→</span></span></div>
-            </div>
-          </a>
+        <button class="showcase-pause" type="button" aria-pressed="false" aria-label="Pause the slideshow"><span aria-hidden="true"></span></button>
+      </div>
+    </section>
+
+    <!-- ============ STUDIO INTRO ============ -->
+    <section class="intro" aria-labelledby="hero-title">
+      <div class="container intro-grid">
+        <div class="rv">
+          <span class="eyebrow">Schill Labs LLC · Independent studio</span>
+          <h1 id="hero-title">Schill Labs makes software, apps, and <span class="grad-text">games</span>.</h1>
+        </div>
+        <div class="intro-side rv rv-d1">
+          <p class="lead">It's run by one developer. FragLedger is live, and three games, Dumpling Shift, Cruise Magnate and Blame Kevin, are coming to the Epic Games Store. Live QA and six apps are in the works behind them.</p>
+          <ul class="platforms" aria-label="Platforms">
+            <li>Epic Games Store</li><li>Windows</li><li>iOS</li><li>Android</li><li>Web</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -181,58 +189,51 @@
         <div class="sec-head rv">
           <div>
             <span class="eyebrow">On PC</span>
-            <h2 id="games-title">The games.</h2>
+            <h2 id="games-title" class="sec-title">Games</h2>
           </div>
-          <p class="blurb">All three are coming to the Epic Games Store.</p>
+          <a class="btn btn-ghost" href="/games/">All games <span class="arr">→</span></a>
         </div>
-        <div class="soft-grid">
-          <a class="card tilt soft-card rv" style="--acc:#FFCD46" href="/games/dumpling-shift/">
-            <div class="art"><img src="/assets/img/games/dumpling-shift/key-art-2.jpg" alt="The Dumpling Shift stall at night in a Chinatown street, under red lanterns." loading="lazy"></div>
-            <div class="body">
-              <div class="chip-row">
-                <span class="chip hot">Coming soon</span>
-                <span class="chip">Epic Games Store · PC and Mac</span>
-              </div>
-              <h3>Dumpling Shift</h3>
-              <p>A first-person cooking sim. Run a dumpling stall in a Chinatown night market, grow it into your own dumpling house, and win the Golden Steamer.</p>
-              <div class="foot"><span class="status">Cooking sim</span><span class="more">About the game <span class="arr">→</span></span></div>
-            </div>
-          </a>
-          <a class="card tilt soft-card rv rv-d1" style="--acc:#5EC8FF" href="/games/cruise-magnate/">
-            <div class="art"><img src="/assets/img/games/cruise-magnate/card-ship.jpg" alt="A newly christened cruise ship at the shipyard under bunting and fireworks, from the game." loading="lazy" style="object-position:center top"></div>
-            <div class="body">
-              <div class="chip-row">
-                <span class="chip hot">December 11</span>
-                <span class="chip">Epic Games Store · Windows · $9.99</span>
-              </div>
-              <h3>Cruise Magnate</h3>
-              <p>A cruise line tycoon. Start in 1985 with one leased liner in Miami and grow the biggest cruise corporation in the world.</p>
-              <div class="foot"><span class="status">Tycoon · Management</span><span class="more">About the game <span class="arr">→</span></span></div>
-            </div>
-          </a>
-          <a class="card tilt soft-card rv rv-d2" style="--acc:#FF5468" href="/games/blame-kevin/">
-            <div class="art"><img src="/assets/img/games/blame-kevin/hero.jpg" alt="Brad sneaking between office desks at night while Deb from HR sweeps a flashlight." style="object-position:right center" loading="lazy"></div>
-            <div class="body">
-              <div class="chip-row">
-                <span class="chip hot">December 11</span>
-                <span class="chip">Epic Games Store · Windows · $4.99</span>
-              </div>
-              <h3>Blame Kevin</h3>
-              <p>A top-down stealth comedy. Sneak through five offices after hours, prank every marked desk, and when it goes wrong, blame Kevin.</p>
-              <div class="foot"><span class="status">Stealth · Comedy</span><span class="more">About the game <span class="arr">→</span></span></div>
-            </div>
-          </a>
+        <div class="game-rows">
+        <a class="game-row rv" href="/games/cruise-magnate/">
+          <div class="game-row-media"><img src="/assets/img/games/cruise-magnate/globe-hero.jpg" alt="A megaship sailing in front of the globe, from Cruise Magnate." loading="lazy"><video muted playsinline loop preload="none" poster="/assets/video/cruise-magnate-loop.jpg" data-src="/assets/video/cruise-magnate-loop.mp4" data-hover-play aria-hidden="true"></video></div>
+          <div class="game-row-body">
+            <span class="game-row-kicker">Out December 11, 2026 · Tycoon · Management</span>
+            <img class="game-row-logo" src="/assets/img/games/cruise-magnate/logo.png" alt="Cruise Magnate" width="1000" height="135" loading="lazy">
+            <p>A cruise line tycoon. Start in 1985 with one leased liner in Miami and grow the biggest cruise corporation in the world.</p>
+            <div class="chip-row"><span class="chip">Epic Games Store</span><span class="chip">Windows PC</span><span class="chip">$9.99</span></div>
+            <span class="more">Explore the game <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="game-row flip rv" href="/games/dumpling-shift/">
+          <div class="game-row-media"><img src="/assets/img/games/dumpling-shift/key-art-2.jpg" alt="The Dumpling Shift stall at night in a Chinatown street, under red lanterns." loading="lazy"><video muted playsinline loop preload="none" poster="/assets/video/dumpling-shift-loop.jpg" data-src="/assets/video/dumpling-shift-loop.mp4" data-hover-play aria-hidden="true"></video></div>
+          <div class="game-row-body">
+            <span class="game-row-kicker">Coming soon · First-person cooking sim</span>
+            <img class="game-row-logo" src="/assets/img/games/dumpling-shift/logo.png" alt="Dumpling Shift" width="632" height="475" loading="lazy">
+            <p>A first-person cooking sim. Run a dumpling stall in a Chinatown night market, grow it into your own dumpling house, and win the Golden Steamer.</p>
+            <div class="chip-row"><span class="chip">Epic Games Store</span><span class="chip">PC and Mac</span></div>
+            <span class="more">Explore the game <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="game-row rv" href="/games/blame-kevin/">
+          <div class="game-row-media"><img src="/assets/img/games/blame-kevin/hero.jpg" alt="Brad sneaking between office desks at night while Deb from HR sweeps a flashlight." loading="lazy"></div>
+          <div class="game-row-body">
+            <span class="game-row-kicker">Out December 11, 2026 · Top-down stealth comedy</span>
+            <img class="game-row-logo" src="/assets/img/games/blame-kevin/logo.png" alt="Blame Kevin" width="1000" height="208" loading="lazy">
+            <p>A top-down stealth comedy. Sneak through five offices after hours, prank every marked desk, and when it goes wrong, blame Kevin.</p>
+            <div class="chip-row"><span class="chip">Epic Games Store</span><span class="chip">Windows PC</span><span class="chip">$4.99</span></div>
+            <span class="more">Explore the game <span class="arr">→</span></span>
+          </div>
+        </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ APPS ============ -->
     <section class="sec" id="apps" aria-labelledby="apps-title">
       <div class="container">
         <div class="sec-head rv">
           <div>
             <span class="eyebrow">The app side</span>
-            <h2 id="apps-title">The apps.</h2>
+            <h2 id="apps-title" class="sec-title">The apps.</h2>
           </div>
           <p class="blurb">Each one started as something I wanted for myself. They're small, they load fast, and they stick to the job they were built for.</p>
         </div>
@@ -283,15 +284,67 @@
       </div>
     </section>
 
-    <!-- ============ MARQUEE ============ -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>FragLedger</span><span>Live QA</span><span>Mello</span><span>Swing Loop</span><span>Bloom Doc</span><span>MealMacroCoach</span><span>Pizza Sidekick</span><span>Money Watch</span><span>Dumpling Shift</span><span>Cruise Magnate</span>
-        <span>FragLedger</span><span>Live QA</span><span>Mello</span><span>Swing Loop</span><span>Bloom Doc</span><span>MealMacroCoach</span><span>Pizza Sidekick</span><span>Money Watch</span><span>Dumpling Shift</span><span>Cruise Magnate</span>
+    <section class="sec" id="software" aria-labelledby="software-title">
+      <div class="container">
+        <div class="sec-head rv">
+          <div>
+            <span class="eyebrow">On the web</span>
+            <h2 id="software-title" class="sec-title">The software.</h2>
+          </div>
+          <p class="blurb">One product is already live. The other is a QA bot for companies, still in the shop.</p>
+        </div>
+        <div class="soft-grid">
+          <a class="card tilt soft-card rv" style="--acc:#FF5E62" href="/software/fragledger/">
+            <div class="art"><img src="/assets/img/art/fragledger-wide.svg" alt="FragLedger match ledger art" loading="lazy"></div>
+            <div class="body">
+              <div class="chip-row">
+                <span class="chip live">Live</span>
+                <span class="chip">CS2 · Web</span>
+              </div>
+              <h3>FragLedger</h3>
+              <p>A CS2 match ledger built from official Valve demos. Paste a share code and keep the rounds, the deaths, and a Frag Rating you can check.</p>
+              <div class="foot"><span class="status">fragledger.com</span><span class="more">Learn more <span class="arr">→</span></span></div>
+            </div>
+          </a>
+          <a class="card tilt soft-card rv rv-d1" style="--acc:#4ECBFF" href="/software/live-qa/">
+            <div class="art"><img src="/assets/img/art/liveqa-wide.svg" alt="Live QA chat art" loading="lazy"></div>
+            <div class="body">
+              <div class="chip-row">
+                <span class="chip">In development</span>
+                <span class="chip">Companies · QA bot</span>
+              </div>
+              <h3>Live QA</h3>
+              <p>A question-and-answer bot for companies. It answers from the company's own material so customers and staff stop hunting through folders.</p>
+              <div class="foot"><span class="status">Coming soon</span><span class="more">Learn more <span class="arr">→</span></span></div>
+            </div>
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ============ STUDIO ============ -->
+    <!-- ============ NEWS ============ -->
+    <section class="sec" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="sec-head rv">
+          <div>
+            <span class="eyebrow">Devlog</span>
+            <h2 id="news-title" class="sec-title">Latest news</h2>
+          </div>
+          <a class="btn btn-ghost" href="/news/">All news <span class="arr">→</span></a>
+        </div>
+        <div class="news-grid">
+          <a class="card news-tile rv" href="/news/fragledger-and-live-qa/">
+            <div class="news-tile-art"><img src="/assets/img/art/fragledger-wide.svg" alt="" loading="lazy"></div>
+            <div class="news-tile-body"><span class="eyebrow">Devlog 002 · August 12, 2026</span><h3>Two more names on the board.</h3><p>FragLedger is live and listed. Live QA — a QA bot for companies — is in development and listed next to it.</p></div>
+          </a>
+          <a class="card news-tile rv rv-d1" href="/news/site-launch/">
+            <div class="news-tile-art"><img src="/assets/img/share/og-home.png" alt="" loading="lazy"></div>
+            <div class="news-tile-body"><span class="eyebrow">Devlog 001 · August 6, 2026</span><h3>The lights are on.</h3><p>Schill Labs has a website now — you're on it. A quick rundown of what's in development and what happens next.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="sec studio-band" aria-labelledby="studio-title">
       <div class="container studio-grid">
         <div class="rv">
@@ -302,22 +355,21 @@
         </div>
         <div class="values rv rv-d1">
           <div class="value">
-            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 4.5L17 8l-4 3.5L14 17l-4-2.5L6 17l1-5.5L3 8l5-1.5z" stroke="#5EE1FF" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 4.5L17 8l-4 3.5L14 17l-4-2.5L6 17l1-5.5L3 8l5-1.5z" stroke="#C6BCFF" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
             <div><b>Finished means finished</b><p>Nothing ships half-built. If a feature isn't ready, it waits for the next update.</p></div>
           </div>
           <div class="value">
-            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#7C8CFF" stroke-width="1.4"/><circle cx="10" cy="10" r="2.4" fill="#7C8CFF"/></svg></div>
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#F5F0E8" stroke-width="1.4"/><circle cx="10" cy="10" r="2.4" fill="#F5F0E8"/></svg></div>
             <div><b>Small on purpose</b><p>Every app does one thing well instead of ten things badly.</p></div>
           </div>
           <div class="value">
-            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 14c2-6 6-9 14-10-1 8-4 12-10 14-2-1-3.5-2.5-4-4z" stroke="#FF9E4A" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
+            <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 14c2-6 6-9 14-10-1 8-4 12-10 14-2-1-3.5-2.5-4-4z" stroke="#C6BCFF" stroke-width="1.4" stroke-linejoin="round"/></svg></div>
             <div><b>Supported after launch</b><p>Support email goes to the person who wrote the code. Bugs get fixed.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ NEWSLETTER ============ -->
     <section class="sec news-band" id="newsletter" aria-labelledby="newsletter-title">
       <div class="container">
         <div class="news-card rv">
@@ -385,6 +437,6 @@
     </div>
   </footer>
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v=20261123b" defer></script>
 </body>
 </html>
